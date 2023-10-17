@@ -25,5 +25,5 @@ public interface TripScheduleService {
      * @param createScheduleForTrip whether to create new schedule for the trip
      * @return details of the {@link TripScheduleDto}
      */
-    TripScheduleDto getTripSchedule(TripDto tripDto, String tripDate, boolean createScheduleForTrip)
+    TripScheduleDto getTripSchedule(TripDto tripDto, String tripDate, boolean createScheduleForTrip);
 }

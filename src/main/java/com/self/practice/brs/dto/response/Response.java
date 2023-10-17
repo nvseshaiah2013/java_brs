@@ -2,6 +2,7 @@ package com.self.practice.brs.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.self.practice.brs.dto.model.user.UserDto;
 import com.self.practice.brs.util.DateUtil;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -81,6 +82,11 @@ public class Response<T> {
                 .build();
         setErrors(error);
 
+    }
+
+    public Response<T> setPayload(T payload) {
+        this.payload = payload;
+        return this;
     }
 
     @Getter
