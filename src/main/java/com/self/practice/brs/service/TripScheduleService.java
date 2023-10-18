@@ -13,9 +13,10 @@ public interface TripScheduleService {
      *
      * @param sourceStopCode source station code
      * @param destinationStopCode destination station code
+     * @param date date of the trip
      * @return {@link List} of {@link TripScheduleDto}
      */
-    List<TripScheduleDto> getAvailableTripSchedules(String sourceStopCode, String destinationStopCode);
+    List<TripScheduleDto> getAvailableTripSchedules(String sourceStopCode, String destinationStopCode, String date);
 
     /**
      * {@link TripScheduleDto} details of the trip
